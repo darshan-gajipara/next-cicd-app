@@ -8,35 +8,41 @@ interface Planet {
 }
 
 // Data for the planets
-let planets: Planet[] = [
+const planets: Planet[] = [
   {
     name: 'Mercury',
-    description: 'The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon.',
+    description:
+      "The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.",
     imageSrc: '/Mercury.png',
   },
   {
     name: 'Venus',
-    description: 'Venus spins slowly in the opposite direction from most planets. It\'s a terrestrial planet and is sometimes called Earth’s "sister planet".',
+    description:
+      'Venus spins slowly in the opposite direction from most planets. It\'s a terrestrial planet and is sometimes called Earth’s "sister planet".',
     imageSrc: '/Venus.png',
   },
   {
     name: 'Earth',
-    description: 'Our home planet is the only place we know of so far that’s inhabited by living things. It\'s also the only planet in our solar system with liquid water on the surface.',
+    description:
+      "Our home planet is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.",
     imageSrc: '/Earth.png',
   },
   {
     name: 'Mars',
-    description: 'Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—a wet and warm planet.',
+    description:
+      'Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—a wet and warm planet.',
     imageSrc: '/Mars.png',
   },
-    {
+  {
     name: 'Jupiter',
-    description: 'Jupiter is more than twice as massive as all the other planets combined. The giant planet\'s Great Red Spot is a centuries-old storm bigger than Earth.',
+    description:
+      "Jupiter is more than twice as massive as all the other planets combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.",
     imageSrc: '/Jupiter.png',
   },
   {
     name: 'Saturn',
-    description: 'Adorned with thousands of beautiful ringlets, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn\'s.',
+    description:
+      "Adorned with thousands of beautiful ringlets, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.",
     imageSrc: '/Saturn.png',
   },
 ];
@@ -50,7 +56,8 @@ export default function Home() {
             Explore Our Solar System
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
-            Welcome to a journey through our cosmic neighborhood. Learn more about the amazing planets that orbit our Sun.
+            Welcome to a journey through our cosmic neighborhood. Learn more
+            about the amazing planets that orbit our Sun.
           </p>
         </header>
 
