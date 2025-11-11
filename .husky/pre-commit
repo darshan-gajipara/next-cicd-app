@@ -1,3 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "📘 Running lint on staged files..."
+npx lint-staged
+
 echo "📘 Running lint on Stagged Files..."
 
 npm run lint:fix
