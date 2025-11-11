@@ -48,7 +48,7 @@ const planets: Planet[] = [
 ];
 
 export default function Home() {
-      return (
+  return (
     <div className="flex min-h-screen flex-col items-center bg-zinc-50 font-sans dark:bg-gray-900 text-gray-900 dark:text-zinc-50 p-8 sm:p-16">
       <main className="flex w-full max-w-5xl flex-col items-center gap-12">
         <header className="text-center">
