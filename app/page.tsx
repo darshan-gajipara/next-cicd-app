@@ -49,7 +49,7 @@ const planets: Planet[] = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-zinc-50 font-sans dark:bg-gray-900 text-gray-900 dark:text-zinc-50 p-8 sm:p-16">
+    <div className="flex min-h-screen flex-col items-center bg-zinc-50 p-8 font-sans text-gray-900 sm:p-16 dark:bg-gray-900 dark:text-zinc-50">
       <main className="flex w-full max-w-5xl flex-col items-center gap-12">
         <header className="text-center">
           <h1 className="text-5xl font-bold tracking-tight text-blue-600 dark:text-blue-400">
@@ -65,7 +65,7 @@ export default function Home() {
           {planets.map((planet) => (
             <div
               key={planet.name}
-              className="flex flex-col items-center gap-4 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-lg transition-transform hover:scale-105"
+              className="flex flex-col items-center gap-4 rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-105 dark:bg-gray-800"
             >
               <Image
                 src={planet.imageSrc}
