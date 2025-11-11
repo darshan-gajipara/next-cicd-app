@@ -8,7 +8,7 @@ interface Planet {
 }
 
 // Data for the planets
-const planets: Planet[] = [
+let planets: Planet[] = [
   {
     name: 'Mercury',
     description: 'The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon.',
