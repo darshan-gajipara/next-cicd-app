@@ -7,9 +7,7 @@ interface Planet {
   imageSrc: string;
 }
 
-let a = 10;
-
-a = "hello"
+const a = 10;
 
 // Data for the planets
 const planets: Planet[] = [
