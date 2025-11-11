@@ -1,1 +1,10 @@
+echo "📘 Running lint on Stagged Files..."
+
 npm run lint:fix
+
+echo "✅ Complete lint on Stagged Files..."
+
+echo "🧠 Checking types..."
+tsc --noEmit
+
+echo "✅ Type check complete."
