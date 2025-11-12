@@ -1,5 +1,3 @@
-# Ignore artifacts:
-.next/
-
-# Ignore specific files:
-package-lock.json
+ignored:
+  - ".next/"
+  - "package-lock.json"
