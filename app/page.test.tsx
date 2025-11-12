@@ -2,6 +2,15 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Home from './page';
 
+// ✅ Mock next/image locally (no separate mock folder)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, react/display-name
+jest.mock('next/image', () => (props: any) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { priority, ...rest } = props;
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img {...rest} alt={props.alt} />;
+});
+
 describe('Home Page', () => {
   it('renders the main heading', () => {
     render(<Home />);
