@@ -41,7 +41,9 @@ describe('Home Page', () => {
 
   it('has a footer with NASA mention', () => {
     render(<Home />);
-    const footerText = screen.getByText(/Data and images courtesy of NASA/i);
+    const footerText = screen.getByText(
+      'Data and images courtesy of NASA (placeholder).'
+    );
     expect(footerText).toBeInTheDocument();
   });
 
